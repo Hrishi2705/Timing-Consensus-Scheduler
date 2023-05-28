@@ -1,0 +1,126 @@
+body {
+    /* text-align: center; */
+    /* background: url("https://cdn.pixabay.com/photo/2013/08/09/05/54/layer-170971_960_720.jpg");
+    background-size:cover;   */
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("https://i.ibb.co/02g8q3L/Pic0.jpg");
+    background-size:cover;  
+  }
+  .main{
+    position: absolute;
+    top: 15%;
+    left: 22%;
+    width: 1000px;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(14px);
+    background-color:rgb(157 211 207 / 20%);
+  }
+  
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .calendar {
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(14px);
+    background-color:rgb(157 211 207 / 20%);
+      /* max-width: 800px; */
+      margin: 50px auto;
+    /* margin-top: 10%; */
+      text-align: center;
+    padding-top: 25px ;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+  }
+  
+  h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+  }
+  h2 {
+      font-size: 40px;
+    position: relative;
+      margin-bottom: 20px;
+    padding-left: 2%;
+    padding-top: 2%;
+  }
+  h5 {
+      font-size: 20px;
+    position: relative;
+      /* margin-bottom: 20px; */
+    padding-left: 2%;
+  
+  }
+  
+  .month {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  .prev,
+  .next {
+      cursor: pointer;
+      font-size: 20px;
+      user-select: none;
+  }
+  
+  .month-name {
+      font-size: 22px;
+      font-weight: bold;
+  }
+  
+  .year {
+      font-size: 18px;
+  }
+  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  
+  .weekdays {
+      background-color: #f0f0f0;
+      font-weight: bold;
+  }
+  
+  .weekdays th {
+      padding: 10px;
+      text-align: center;
+  }
+  
+  .days td {
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .days td:hover {
+      background-color: #ccc;
+  }
+  
+  .days td.available {
+      background-color: #f0f0f0;
+  }
+  
+  .days td.unavailable {
+      background-color: #333;
+      color: #fff;
+  }
+  
+  .days td span {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ccc;
+  }
+  

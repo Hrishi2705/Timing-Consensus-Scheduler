@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("https://i.ibb.co/02g8q3L/Pic0.jpg");
+    background-size:cover;  
+  }
+h1 {
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+  }
+i {
+  color: #9ABC66;
+  font-size: 100px;
+  line-height: 200px;
+  margin-left:-15px;
+}
+.card {
+        position: fixed; /* or absolute */
+        top: 190px;
+        left: 34%;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(14px);
+    background-color:rgb(157 211 207 / 20%);
+
+  padding: 60px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.submit-btn {
+    background: beige ;
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+     padding: 0.4rem 1rem; 
+    transition: 0.2s;
+  }
+  
+.submit-btn:hover {
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1.1rem;
+    background:  #444;
+    color: beige;
+    box-shadow: 0 0 35px var(--clr); 
+    animation: box 3s infinite;
+  }

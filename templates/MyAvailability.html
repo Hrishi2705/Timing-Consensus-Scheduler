@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}MyAvailability{% endblock title %}
+
+{% block body %}
+
+{% load static%}
+
+
+<div class="main">
+    <h2>Set Your Availability</h2>
+    <h5>
+     Double click on the date to mark as unavailable.
+     <br>
+     Beige - Available
+     <br>
+     Dark Grey - unavailable
+    </h5>
+         <div class="calendar">
+           <!-- <h2>Availability Calendar</h2> -->
+           <div class="month">
+             <p></p>
+             <div class="prev">&#10094;</div>
+             <div class="month-name">32</div>
+             <div class="next">&#10095;</div>
+             
+             <div class="year"></div>
+           </div>
+           <table>
+             <thead>
+               <tr class="weekdays"></tr>
+             </thead>
+             <tbody class="days"></tbody>
+           </table>
+           <!-- <h3>
+             Double click on the date to set as Unavaialable
+           
+           </h3> -->
+         </div>
+         <!-- <button id="submitBtn" type="button">Save Availability</button> -->
+   </div>
+
+<link rel="stylesheet" href="{% static 'css\MyAvail.css' %}">
+<script src="{% static 'js\MyAvailability.js' %}"></script>
+
+   
+{% endblock body %}

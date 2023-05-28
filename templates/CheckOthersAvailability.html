@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}CheckOthersAvailability{% endblock title %}
+
+{% block body %}
+{% load static%}
+
+
+
+<div class="container">
+
+    <h1>User List</h1><br>
+    <form>
+      <div class="form-group">
+        <span class="form-label"><h5>Select a date:</h5></span>
+        <input class="form-control" type="date" required="">
+    </div>
+
+      <!-- <label for="search">Select a user:</label>
+          <select id="search" name="search">
+              <option value="">Select a user</option>
+              <option value="John">John</option>
+              <option value="Jane">Jane</option>
+              <option value="Jack">Jack</option>
+          </select>
+      <button type="button" onclick="addUser()">Add User</button> -->
+      <span class="form-label"><h5>Select Facility</h5>
+        <div class="subpart">
+          <select id= "search" class="custom-select" onmousedown="if(this.options.length>5){this.size=3}"
+          onchange='this.blur()' onblur="this.removeAttribute('size')">
+              <option>--Select User--</option>
+              <option>User 1</option>
+              <option>User 2</option>
+              <option>User 3</option>
+              <option>User 4</option>
+              <option>User 5</option>
+              <option>User 6</option>
+          </select> &nbsp; 
+          <button class="submit" onclick="addUser()">Add User</button>
+        </div>
+        </span>
+    </form>
+    <h2>Selected Users:</h2>
+    <ul id="user-list">
+    </ul>
+    <form>
+      <button class="submit-btn">Check Members availability</button>
+    </form>
+  </div>
+  
+  <link rel="stylesheet" href="{% static 'css\CheckOthersAvailability.css' %}">
+  <script src="{% static 'js\CheckOthersAvailability.js' %}"></script>
+{% endblock body %}

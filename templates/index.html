@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+{% load static%}
+
+<div class="container-fluid my-4">
+  <div class="jumbotron">
+      <h1 class="display-4">Welcome to Timing Consensus Scheduler</h1>
+      <p class="lead">A convenient platform to manage your daily availability, check the availability of others, book facilities in our college, and schedule events based on everyone's availability.</p>
+      <hr class="my-4">
+      <p>With our user-friendly interface, you can easily coordinate your schedules and stay organized.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                {% comment %} <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">  {% endcomment %}
+                <h3>Event 1</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6>
+                  Date : 21/20/23 <br>
+                  Time: 9:00pm <br>
+                  Facility: J213
+                </h6>
+                    <a href="#">Edit Booking</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <!-- <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"> -->
+                <h3>Event 2</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+              <h6>
+                Date : 22/20/23 <br>
+                Time: 6:00pm <br>
+                Facility: I213
+              </h6>
+              <a href="#">Edit Booking</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <!-- <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true"> -->
+                <h3>Event 3</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+              <h6>
+                Date : 26/20/23 <br>
+                Time: 6:00pm <br>
+                Facility: F208
+              </h6>
+              <a href="#">Edit Booking</a>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="{% static 'css\index.css' %}">
+{% comment %} <script src="Home.js"></script> {% endcomment %}
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+{% endblock body %}

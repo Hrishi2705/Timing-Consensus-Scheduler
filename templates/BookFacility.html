@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% block title %}BookFacility{% endblock title %}
+
+{% block body %}
+
+{% load static%}
+
+<link rel="stylesheet" href="static\css\BookFacility.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+  <div id="booking" class="section">  
+      <div class="section-center">
+          
+          <div class="container">
+              
+              <div class="row">
+                  <div class="col-md-7 col-md-push-5">
+                      <div class="booking-cta">
+      <h1>Make your booking reservation</h1>
+      <p>Here, you can book any facility on the campus based on the availability. For booking, first please fill your preferences to check the availability of the facility.
+      </p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-md-pull-7">
+                      <div class="booking-form">
+                          <form>
+                              <span class="form-label">Select Facility</span>
+                              <select class="custom-select" onmousedown="if(this.options.length>5){this.size=3}"
+                                  onchange='this.blur()' onblur="this.removeAttribute('size')">
+                                  <option>--Select Facility--</option>
+                                  <option>F Block</option>
+                                  <option>G Block</option>
+                                  <option>H Block</option>
+                                  <option>I Block</option>
+                                  <option>J Block</option>
+                                  <option>K Block</option>
+                              </select>
+  
+                              <br>
+                          
+                              <span class="form-label">Select Room</span>
+                              <select class="custom-select" onmousedown="if(this.options.length>5){this.size=5}"
+                                  onchange='this.blur()' onblur="this.removeAttribute('size')">
+                                  <span class="form-label">Select Room</span>
+                                  <option>--Select Room--</option>
+                                  <option>F 201 </option>
+                                  <option>F 202</option>
+                                  <option>F 203</option>
+                                  <option>F 204</option>
+                                  <option>F 205</option>
+                                  <option>F 206</option>
+                                  <option>F 207</option>
+                                  <option>F 208</option>
+  
+                                  <option>G 201</option>
+                                  <option>G 202</option>
+                                  <option>G 203</option>
+                                  <option>G 204</option>
+                                  <option>G 205</option>
+                                  <option>G 206</option>
+                                  <option>G 207</option>
+                                  <option>G 208</option>
+  
+                                  <option>H 111</option>
+                                  <option>H 112</option>
+                                  <option>H 113</option>
+                                  <option>H 114</option>
+                                  <option>H 115</option>
+                                  <option>H 116</option>
+                                  <option>H 117</option>
+                                  <option>H 118</option>
+  
+                                  <option>I 111</option>
+                                  <option>I 112</option>
+                                  <option>I 113</option>
+                                  <option>I 114</option>
+                                  <option>I 115</option>
+                                  <option>I 116</option>
+                                  <option>I 117</option>
+                                  <option>I 118</option>
+  
+                                  <option>J 111</option>
+                                  <option>J 112</option>
+                                  <option>J 113</option>
+                                  <option>J 114</option>
+                                  <option>J 115</option>
+                                  <option>J 116</option>
+                                  <option>J 117</option>
+                                  <option>J 118</option>
+  
+                                  <option>K 111</option>
+                                  <option>K 112</option>
+                                  <option>K 113</option>
+                                  <option>K 114</option>
+                                  <option>K 115</option>
+                                  <option>K 116</option>
+                                  <option>K 117</option>
+                                  <option>K 118</option>
+                                  </select>
+                              </br>
+                             <div class='row2'>
+                                  <div class="col-sm-6">
+                                      <div class="form-group">
+                                          <span class="form-label">Select Date</span>
+                                          <input class="form-control" type="date" required="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="form-btn">
+                                  <button onclick="window.location.href = 'CheckRoomAvailability';" class="submit-btn">Check Room availability</button>
+                              </div>
+                          </br>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+{% endblock body %}
