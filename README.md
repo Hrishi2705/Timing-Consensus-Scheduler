@@ -7,10 +7,15 @@ It is designed to simplify the process of scheduling and coordinating activities
 _**Features**_
 
 _Home Page:_ Displays the bookings of the logged-in user.
+
 _My Availability Page:_ Allows users to set their daily availability using a calendar interface.
+
 _Check Others Availability Page_: Enables users to check the availability of other users by selecting their UserIDs and a specific date.
+
 _Book Facility Page:_ Provides the ability to select a facility at BITS Hyderabad, choose a room, and book available slots.
+
 _Edit Profile:_ Allows users to modify their profile information.
+
 _Logout:_ Logs out the current user.
 
 _**Technologies Used**_
