@@ -28,5 +28,6 @@ Django (Python web framework)
 
 _**Usage:**_
 1. Navigate to the project directory.
-2. Run the development server: python manage.py runserver
+2. Run the development server: 
+              python manage.py runserver
 3. The server will run in a local host in your web server.
